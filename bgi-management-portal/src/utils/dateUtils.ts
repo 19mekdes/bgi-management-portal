@@ -1,10 +1,4 @@
-/**
- * Date utility functions for the BGI Management Portal
- */
 
-/**
- * Format a date to a readable string
- */
 export const formatDate = (date: Date | string | null | undefined, format: string = 'YYYY-MM-DD'): string => {
   if (!date) return '';
   
