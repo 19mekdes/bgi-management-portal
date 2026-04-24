@@ -164,9 +164,7 @@ export const getInitials = (name: string, maxInitials: number = 2): string => {
   return initials;
 };
 
-/**
- * Format slug (URL-friendly string)
- */
+
 export const formatSlug = (text: string): string => {
   return text
     .toLowerCase()
@@ -176,9 +174,7 @@ export const formatSlug = (text: string): string => {
     .replace(/^-+|-+$/g, '');
 };
 
-/**
- * Format JSON with indentation
- */
+
 export const formatJSON = (obj: any, indent: number = 2): string => {
   try {
     return JSON.stringify(obj, null, indent);

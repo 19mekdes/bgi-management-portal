@@ -1,6 +1,3 @@
-/**
- * Helper utility functions for the BGI Management Portal
- */
 
 /**
  * Sleep for a specified number of milliseconds
@@ -35,9 +32,7 @@ export const debounce = <T extends (...args: unknown[]) => unknown>(
   };
 };
 
-/**
- * Throttle function to limit how often a function is called
- */
+
 export const throttle = <T extends (...args: unknown[]) => unknown>(
   func: T,
   limit: number
