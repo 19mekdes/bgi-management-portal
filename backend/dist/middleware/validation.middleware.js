@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.validate = void 0;
+const validate = (schema) => {
+    return (req, res, next) => {
+        const { error, value } = schema.validate(req.body);
+        if (error) {
+            return res.status(400).json({ message: error.details[0].message });
+        }
+        req.body = value;
+        next();
+    };
+};
+exports.validate = validate;
