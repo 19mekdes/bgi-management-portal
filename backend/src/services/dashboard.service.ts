@@ -43,7 +43,7 @@ export class DashboardService {
   }
 
   async getRecentActivities(limit: number) {
-    // Placeholder – can be implemented with a separate activity log table
+  
     return [];
   }
 }
