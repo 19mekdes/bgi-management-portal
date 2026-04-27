@@ -1,7 +1,3 @@
-
-/**
- * Sleep for a specified number of milliseconds
- */
 export const sleep = (ms: number): Promise<void> => {
   return new Promise(resolve => setTimeout(resolve, ms));
 };
@@ -68,9 +64,7 @@ export const generateUUID = (): string => {
   });
 };
 
-/**
- * Check if an object is empty
- */
+
 export const isEmptyObject = (obj: object): boolean => {
   return Object.keys(obj).length === 0;
 };
