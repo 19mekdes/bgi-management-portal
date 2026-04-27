@@ -3,7 +3,6 @@ import { AttendanceTable } from './components/AttendanceTable';
 import { AttendanceCalendar } from './components/AttendanceCalendar';
 import { attendanceService } from '../../services/attendance.service';
 
-// Define the expected response type from the API
 interface ApiAttendanceRecord {
   id: string;
   employeeId: number;
