@@ -4,7 +4,7 @@ import { Upload, X, File, CheckCircle, AlertCircle } from 'lucide-react';
 interface FileUploadProps {
   label?: string;
   accept?: string;
-  maxSize?: number; // in bytes
+  maxSize?: number; 
   onFileSelect?: (file: File) => void;
   onFileRemove?: () => void;
   error?: string;
@@ -17,7 +17,7 @@ interface FileUploadProps {
 export const FileUpload: React.FC<FileUploadProps> = ({
   label,
   accept = 'image/*,.pdf,.doc,.docx',
-  maxSize = 5 * 1024 * 1024, // 5MB default
+  maxSize = 5 * 1024 * 1024, 
   onFileSelect,
   onFileRemove,
   error,
