@@ -12,7 +12,6 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Backend is running!' });
 });
 
-// Mock login
 app.post('/api/auth/login', (req, res) => {
   const { email, password } = req.body;
   
