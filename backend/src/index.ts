@@ -11,7 +11,6 @@ const PORT = config.port;
 app.use(cors());
 app.use(express.json());
 
-// Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Backend is running!' });
 });

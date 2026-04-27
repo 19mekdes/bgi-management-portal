@@ -20,7 +20,6 @@ app.use(cors(config.cors));
 // Compression
 app.use(compression());
 
-// Body parsing
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
@@ -39,7 +38,6 @@ app.use(requestLogger);
 // Static files
 app.use('/uploads', express.static('uploads'));
 
-// Health check
 app.get('/health', (req: Request, res: Response) => {
   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
 });
@@ -52,7 +50,6 @@ app.use((req: Request, res: Response) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-// Global error handler
 app.use(errorHandler);
 
 export default app;
