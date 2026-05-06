@@ -5,7 +5,6 @@ import { roleMiddleware } from '../middleware/role.middleware';
 
 const router = Router();
 const settingsController = new SettingsController();
-
 router.use(authMiddleware);
 
 // User settings (authenticated users)

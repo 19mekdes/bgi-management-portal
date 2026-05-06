@@ -5,7 +5,6 @@ import { roleMiddleware } from '../middleware/role.middleware';
 
 const router = Router();
 const reportController = new ReportController();
-
 router.use(authMiddleware);
 router.use(roleMiddleware(['admin', 'manager'])); // Only admin and manager can access reports
 
