@@ -1,5 +1,4 @@
 import prisma from '../config/database';
-
 export const attendanceService = {
   async getTodayStatus(userId: number) {
     const today = new Date();

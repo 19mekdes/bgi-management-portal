@@ -3,7 +3,6 @@ import { comparePassword, hashPassword } from '../utils/bcrypt';
 import { generateToken } from '../utils/jwt';
 import { sendResetEmail } from './email.service';
 import crypto from 'crypto';
-
 export class AuthService {
   async login(email: string, password: string) {
     const employee = await prisma.employee.findUnique({ where: { email } });
