@@ -5,7 +5,6 @@ import { roleMiddleware } from '../middleware/role.middleware';
 
 const router = Router();
 const dashboardController = new DashboardController();
-
 router.use(authMiddleware);
 
 // Role-specific dashboard stats

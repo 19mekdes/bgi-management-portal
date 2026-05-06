@@ -6,7 +6,6 @@ import { roleMiddleware } from '../middleware/role.middleware';
 const router = Router();
 const employeeController = new EmployeeController();
 
-// All routes require authentication
 router.use(authMiddleware);
 
 // Admin and Manager can view employees

@@ -13,7 +13,7 @@ router.post('/checkout', attendanceController.checkOut);
 router.get('/today-status', attendanceController.getTodayStatus);
 router.get('/my-stats', attendanceController.getMyStats);
 
-// Manager/Admin routes
+
 router.get('/', roleMiddleware(['admin', 'manager']), attendanceController.getAll);
 
 export default router;
